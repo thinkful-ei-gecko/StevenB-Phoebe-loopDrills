@@ -25,3 +25,14 @@ function min(numbers) {
 }
 
 console.log(min([]));
+
+//with input of an array of numbers, compute the average using .forEach()
+
+function average(numbers) {
+    let sum = 0;
+    numbers.forEach(function(element) {sum += element});
+
+    return sum / numbers.length;
+}
+
+console.log(average([10,20]));
